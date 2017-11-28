@@ -15,4 +15,9 @@ function deleteFromObjectByKey(object, key){
   delete newObject.key
   return newObject
 }
-//
+//destructly deletes key-value pair from object
+function destructivelyDeleteFromObjectByKey(object, key){
+  var object = {key}
+  delete object.key
+  return object
+}
