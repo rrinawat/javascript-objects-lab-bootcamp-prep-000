@@ -1,7 +1,7 @@
 var recipes = {}
 //update object non destructively, use object.assign and use new {} as target
 function updateObjectWithKeyAndValue(object, key, value){
-  return Object.assign({}, object, {[key]: value})
+  return Object.assign({}, object, {key: value})
 }
 //update object destructively, can sitll use Object.assign, but do not declare a new target obj
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
@@ -15,4 +15,4 @@ function deleteFromObjectByKey(object, key){
   delete newObject.key
   return newObject
 }
-// 
+//
